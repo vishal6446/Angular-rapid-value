@@ -1,0 +1,19 @@
+<!-- <h2>{{title}}</h2> -->
+<h2>{{getTitle().toUpperCase()}}</h2>
+<hr>
+<h3>Name:{{name}}</h3>
+<h3>Duration:{{duration}}</h3>
+<br>
+<!-- <ul>
+    <li>{{courses[0]}}</li>
+    <li>{{courses[1]}}</li>
+    <li>{{courses[2]}}</li>
+    <li>{{courses[3]}}</li>
+</ul> -->
+<ul>
+    <li *ngFor='let course of courses'>{{course}}</li>
+</ul>
+<button class="btn btn-primary">clickme</button>
+<button class="btn btn-secondary">clickme</button>
+
+<hr>

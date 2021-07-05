@@ -1,0 +1,8 @@
+<!-- <h2>Directives-if</h2>
+<div *ngIf='players.length>0'>
+<h3>List of players</h3></div>
+<div *ngIf="players.length<=0"><h3>No players yet</h3></div> -->
+<h2>Directives-if</h2>
+<div *ngIf='players.length>0 then playersAvailable else noPlayers'></div>
+<ng-template #playersAvailable>List of players</ng-template>
+<ng-template #noPlayers>No players</ng-template>

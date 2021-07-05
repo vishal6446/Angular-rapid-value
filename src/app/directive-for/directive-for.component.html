@@ -1,0 +1,9 @@
+<h3>*ngFor</h3>
+<hr>
+<br>
+<button class='btn btn-primary' (click)='onAdd()'>ADD COURSE</button>
+<ul>
+    <li *ngFor="let course of courses">{{course.name}}
+        <button class="btn btn-danger" (click)='onRemove(course)'>Remove</button>
+    </li>
+</ul>

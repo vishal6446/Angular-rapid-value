@@ -1,0 +1,18 @@
+<div>
+    <input type="text" [(ngModel)]='comments'>
+</div>
+<button (click)='postComment()'>post</button>
+<div *ngFor='let comment of array'>{{comment}}</div>
+
+<!-- <div>{{array}}</div> -->
+<!-- <div>
+    <ul>
+        <li *ngFor='let arr of array'>{{arr}}</li>
+    </ul>
+</div> -->
+
+<!-- <div>
+    <input type="text" #comments 
+    (keyup.enter)="commentPost(comments.value)">
+
+</div> -->

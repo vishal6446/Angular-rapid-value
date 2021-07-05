@@ -1,0 +1,23 @@
+<!-- <h2>event-binding</h2>
+<div>
+    <button class="btn btn-success" (click)='onSave()'>
+        Save
+    </button>
+</div> -->
+<h2>event-binding</h2>
+<div (click)='onMainDivClicked()' style='border:2px'>
+    <div (click)='onInternalDivClicked()'>
+    <button class="btn btn-success" (click)='onSave($event)'>
+        Save
+    </button>
+    </div>
+</div>
+<div>
+    <input type="text" #myText1 
+    (keyup.enter)="onKeyUp(myText1)">
+    
+    <input type="text" #myText2 
+    (keyup.enter)="onKeyUpValue(myText2.value)">
+
+
+</div>

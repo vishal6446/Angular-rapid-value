@@ -1,0 +1,18 @@
+<h3>Tracking</h3>
+<hr>
+<br>
+<button class='btn btn-primary' (click)='loadCourses()'>LOAD COURSE</button>
+<ul>
+    <li *ngFor="let course of courses; trackBy: trackCourse">
+        {{course.name}}
+    </li>
+</ul>
+<button class="mybutton" (click)="changeState()"
+[style.background-color]="canSave ? 'gold':'tomato'"
+[style.font-weight]="canSave ? 'bold':'normal'"
+[ngStyle]="{
+    'background-color':canSave ? 'green':'purple',
+    'font-weight':canSave ? 'bold':'normal'
+}">
+    save
+</button>
